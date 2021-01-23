@@ -35,13 +35,13 @@ public class Subject implements ISubject<Integer> {
     }
 
     @Override
-    public void subsctibe(IObserver<Integer> observer) {
+    public void subscribe(IObserver<Integer> observer) {
         if(!observers.contains(observer))
             observers.add(observer);
     }
 
     @Override
-    public void unsubsctibe(IObserver<Integer> observer) {
+    public void unsubscribe(IObserver<Integer> observer) {
         observers.remove(observer);
     }
 }

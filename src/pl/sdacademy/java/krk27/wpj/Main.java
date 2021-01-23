@@ -322,13 +322,13 @@ public class Main {
         Subject subject = new Subject();
         IObserver observerA = new ObserverA();
         IObserver observerB = new ObserverB();
-        subject.subsctibe(observerA);
-        subject.subsctibe(observerB);
+        subject.subscribe(observerA);
+        subject.subscribe(observerB);
 
         subject.someBusinessLogic();
         subject.someBusinessLogic();
 
-        subject.unsubsctibe(observerB);
+        subject.unsubscribe(observerB);
 
         subject.someBusinessLogic();
     }

@@ -15,7 +15,7 @@ public class HtmlVisitor implements IVisitor {
 
     @Override
     public void visit(BoldText element) {
-        output += element.getBold();
+        output += "<b>" + element.getBold() + "</b>";
 
     }
 
